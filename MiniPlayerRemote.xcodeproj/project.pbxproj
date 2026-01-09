@@ -6,6 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0ABD01212F0FFD0B00E59B49 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABD01202F0FFD0B00E59B49 /* WidgetKit.framework */; };
+		0ABD01232F0FFD0B00E59B49 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABD01222F0FFD0B00E59B49 /* SwiftUI.framework */; };
+		0ABD01342F0FFD0C00E59B49 /* RemoteWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0ABD011E2F0FFD0B00E59B49 /* RemoteWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0ABD00922F0E682600E59B49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -21,13 +27,47 @@
 			remoteGlobalIDString = 0ABD00802F0E682500E59B49;
 			remoteInfo = MiniPlayerRemote;
 		};
+		0ABD01322F0FFD0C00E59B49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0ABD00792F0E682500E59B49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0ABD011D2F0FFD0B00E59B49;
+			remoteInfo = RemoteWidgetExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0ABD01392F0FFD0C00E59B49 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0ABD01342F0FFD0C00E59B49 /* RemoteWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0ABD00812F0E682500E59B49 /* MiniPlayerRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MiniPlayerRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABD00912F0E682600E59B49 /* MiniPlayerRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniPlayerRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ABD009B2F0E682600E59B49 /* MiniPlayerRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiniPlayerRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABD011E2F0FFD0B00E59B49 /* RemoteWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RemoteWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABD01202F0FFD0B00E59B49 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0ABD01222F0FFD0B00E59B49 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		0ABD01352F0FFD0C00E59B49 /* Exceptions for "RemoteWidget" folder in "RemoteWidgetExtension" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 0ABD011D2F0FFD0B00E59B49 /* RemoteWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		0ABD00832F0E682500E59B49 /* MiniPlayerRemote */ = {
@@ -43,6 +83,14 @@
 		0ABD009E2F0E682600E59B49 /* MiniPlayerRemoteUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = MiniPlayerRemoteUITests;
+			sourceTree = "<group>";
+		};
+		0ABD01242F0FFD0B00E59B49 /* RemoteWidget */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				0ABD01352F0FFD0C00E59B49 /* Exceptions for "RemoteWidget" folder in "RemoteWidgetExtension" target */,
+			);
+			path = RemoteWidget;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -69,6 +117,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0ABD011B2F0FFD0B00E59B49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABD01232F0FFD0B00E59B49 /* SwiftUI.framework in Frameworks */,
+				0ABD01212F0FFD0B00E59B49 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -78,6 +135,8 @@
 				0ABD00832F0E682500E59B49 /* MiniPlayerRemote */,
 				0ABD00942F0E682600E59B49 /* MiniPlayerRemoteTests */,
 				0ABD009E2F0E682600E59B49 /* MiniPlayerRemoteUITests */,
+				0ABD01242F0FFD0B00E59B49 /* RemoteWidget */,
+				0ABD011F2F0FFD0B00E59B49 /* Frameworks */,
 				0ABD00822F0E682500E59B49 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +147,18 @@
 				0ABD00812F0E682500E59B49 /* MiniPlayerRemote.app */,
 				0ABD00912F0E682600E59B49 /* MiniPlayerRemoteTests.xctest */,
 				0ABD009B2F0E682600E59B49 /* MiniPlayerRemoteUITests.xctest */,
+				0ABD011E2F0FFD0B00E59B49 /* RemoteWidgetExtension.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		0ABD011F2F0FFD0B00E59B49 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0ABD01202F0FFD0B00E59B49 /* WidgetKit.framework */,
+				0ABD01222F0FFD0B00E59B49 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,10 +171,12 @@
 				0ABD007D2F0E682500E59B49 /* Sources */,
 				0ABD007E2F0E682500E59B49 /* Frameworks */,
 				0ABD007F2F0E682500E59B49 /* Resources */,
+				0ABD01392F0FFD0C00E59B49 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0ABD01332F0FFD0C00E59B49 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				0ABD00832F0E682500E59B49 /* MiniPlayerRemote */,
@@ -163,6 +234,28 @@
 			productReference = 0ABD009B2F0E682600E59B49 /* MiniPlayerRemoteUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		0ABD011D2F0FFD0B00E59B49 /* RemoteWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ABD01362F0FFD0C00E59B49 /* Build configuration list for PBXNativeTarget "RemoteWidgetExtension" */;
+			buildPhases = (
+				0ABD011A2F0FFD0B00E59B49 /* Sources */,
+				0ABD011B2F0FFD0B00E59B49 /* Frameworks */,
+				0ABD011C2F0FFD0B00E59B49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				0ABD01242F0FFD0B00E59B49 /* RemoteWidget */,
+			);
+			name = RemoteWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = RemoteWidgetExtension;
+			productReference = 0ABD011E2F0FFD0B00E59B49 /* RemoteWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -184,6 +277,9 @@
 						CreatedOnToolsVersion = 16.2;
 						TestTargetID = 0ABD00802F0E682500E59B49;
 					};
+					0ABD011D2F0FFD0B00E59B49 = {
+						CreatedOnToolsVersion = 16.2;
+					};
 				};
 			};
 			buildConfigurationList = 0ABD007C2F0E682500E59B49 /* Build configuration list for PBXProject "MiniPlayerRemote" */;
@@ -203,6 +299,7 @@
 				0ABD00802F0E682500E59B49 /* MiniPlayerRemote */,
 				0ABD00902F0E682600E59B49 /* MiniPlayerRemoteTests */,
 				0ABD009A2F0E682600E59B49 /* MiniPlayerRemoteUITests */,
+				0ABD011D2F0FFD0B00E59B49 /* RemoteWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -223,6 +320,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0ABD00992F0E682600E59B49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0ABD011C2F0FFD0B00E59B49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -253,6 +357,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0ABD011A2F0FFD0B00E59B49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -265,6 +376,11 @@
 			isa = PBXTargetDependency;
 			target = 0ABD00802F0E682500E59B49 /* MiniPlayerRemote */;
 			targetProxy = 0ABD009C2F0E682600E59B49 /* PBXContainerItemProxy */;
+		};
+		0ABD01332F0FFD0C00E59B49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0ABD011D2F0FFD0B00E59B49 /* RemoteWidgetExtension */;
+			targetProxy = 0ABD01322F0FFD0C00E59B49 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -393,12 +509,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiniPlayerRemote/MiniPlayerRemote.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniPlayerRemote/Preview Content\"";
 				DEVELOPMENT_TEAM = CFYDJBH978;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -422,12 +540,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MiniPlayerRemote/MiniPlayerRemote.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"MiniPlayerRemote/Preview Content\"";
 				DEVELOPMENT_TEAM = CFYDJBH978;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -518,6 +638,60 @@
 			};
 			name = Release;
 		};
+		0ABD01372F0FFD0C00E59B49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CFYDJBH978;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RemoteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.audex.MiniPlayerRemote.RemoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ABD01382F0FFD0C00E59B49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = CFYDJBH978;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RemoteWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RemoteWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.audex.MiniPlayerRemote.RemoteWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -553,6 +727,15 @@
 			buildConfigurations = (
 				0ABD00AC2F0E682600E59B49 /* Debug */,
 				0ABD00AD2F0E682600E59B49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ABD01362F0FFD0C00E59B49 /* Build configuration list for PBXNativeTarget "RemoteWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ABD01372F0FFD0C00E59B49 /* Debug */,
+				0ABD01382F0FFD0C00E59B49 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

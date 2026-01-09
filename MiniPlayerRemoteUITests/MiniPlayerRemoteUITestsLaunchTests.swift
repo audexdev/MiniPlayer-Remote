@@ -1,10 +1,3 @@
-//
-//  MiniPlayerRemoteUITestsLaunchTests.swift
-//  MiniPlayerRemoteUITests
-//
-//  Created by kairi hoshino on 2026/01/07.
-//
-
 import XCTest
 
 final class MiniPlayerRemoteUITestsLaunchTests: XCTestCase {

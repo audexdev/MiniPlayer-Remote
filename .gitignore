@@ -1,0 +1,11 @@
+DerivedData/
+build/
+*.xcuserstate
+*.xcuserdata/
+.DS_Store
+*.swp
+*.tmp
+*.log
+Pods/
+Carthage/Build/
+.swiftpm/

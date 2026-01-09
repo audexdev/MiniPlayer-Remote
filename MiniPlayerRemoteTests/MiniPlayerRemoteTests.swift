@@ -1,10 +1,3 @@
-//
-//  MiniPlayerRemoteTests.swift
-//  MiniPlayerRemoteTests
-//
-//  Created by kairi hoshino on 2026/01/07.
-//
-
 import XCTest
 @testable import MiniPlayerRemote
 

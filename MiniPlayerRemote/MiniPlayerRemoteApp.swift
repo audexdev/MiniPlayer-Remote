@@ -1,17 +1,15 @@
-//
-//  MiniPlayerRemoteApp.swift
-//  MiniPlayerRemote
-//
-//  Created by kairi hoshino on 2026/01/07.
-//
-
 import SwiftUI
 
 @main
 struct MiniPlayerRemoteApp: App {
+    @StateObject private var controller = MusicAgentController()
+    @StateObject private var locationKeeper = LocationKeeper()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(controller)
+                .environmentObject(locationKeeper)
         }
     }
 }
